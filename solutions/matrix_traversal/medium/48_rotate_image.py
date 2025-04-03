@@ -9,6 +9,9 @@ from typing import List
 
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
+        # Time Complexity: O(N^2) - O(N^2) for transposition + O(N^2) for reversal
+        # Space Complexity: O(1) - in-place
+        
         n = len(matrix[0]) #find the side length of a matrix
         for i in range(n):
             for j in range(i):

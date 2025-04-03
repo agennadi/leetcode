@@ -8,6 +8,9 @@ from typing import List
 
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
+      # Time Complexity: O(N * N!) - n factorial to calculate permutations; For each of the n! permutations, we need to iter over nums: O(n)  
+      # Space Complexity: O(N * N!) - res stores n! permutations, each of length n
+              
         def backtrack(curr):
             if len(curr) == len(nums):
                 res.append(curr[:])
