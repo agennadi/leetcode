@@ -69,7 +69,6 @@ def transpose(message, rows, cols):
     return ''.join(c for c in transposed_message)
 
 
-
 message1 = "One does not simply walk into Mordor"
 rows1 = 6
 cols1 = 6
